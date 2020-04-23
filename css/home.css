@@ -204,7 +204,7 @@ a:hover, a:focus {
 .pre-loader .progress {
   -webkit-animation: loader 8s ease infinite;
   animation: loader 8s ease infinite;
-  background: #000000;
+  background: #8dad09;
   border: none;
   color: #fff;
   padding: 0px;
@@ -969,8 +969,9 @@ a:hover, a:focus {
   font-family: ar-reg;
   font-size: 15px;
   color: black;
-  min-height: 55px;
   display: block;
+  height: 47px;
+  overflow: hidden;
 }
 
 .card .card-body .card-price {
@@ -2149,10 +2150,6 @@ html[dir="ltr"] .footer .subscribe button {
   right: 20px;
 }
 
-html[dir="ltr"] .card {
-  min-height: 333px;
-}
-
 @media (max-width: 992px) {
   html[dir="ltr"] .nav-bar .icons {
     margin: 20px 0 0 auto;
@@ -2205,4 +2202,3 @@ html[dir="ltr"] .card {
   }
 }
 
-/*# sourceMappingURL=home.css.map */
