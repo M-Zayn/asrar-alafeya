@@ -1536,6 +1536,12 @@ a:hover, a:focus {
 }
 
 /*------ responsive ------*/
+@media (max-width: 1920px) {
+  .owl-carousel .owl-item img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .nav-bar {
     margin: 5px 0;
@@ -2202,3 +2208,4 @@ html[dir="ltr"] .footer .subscribe button {
   }
 }
 
+/*# sourceMappingURL=home.css.map */
