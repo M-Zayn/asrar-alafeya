@@ -868,7 +868,7 @@ a:hover, a:focus {
 /*------ header end ------*/
 /*------ category start ------*/
 .category {
-  margin: 60px 0 100px 0;
+  margin: 60px 0 40px 0;
 }
 
 .category .zx-container {
@@ -1168,7 +1168,7 @@ a:hover, a:focus {
 /*--- card end ---*/
 /*------ sp offers start ------*/
 .sp-offers {
-  padding: 30px 0 30px 0;
+  padding: 90px 0 90px 0;
   background-color: #030303;
 }
 
@@ -1219,7 +1219,7 @@ a:hover, a:focus {
 /*------ sp offers end ------*/
 /*------ most sales start ------*/
 .most-sales {
-  margin: 130px 0 0 0;
+  margin: 90px 0 0 0;
 }
 
 .most-sales .most-sales-header {
@@ -1347,8 +1347,8 @@ a:hover, a:focus {
 /*------ sp offers end ------*/
 /*------ servs start ------*/
 .servs {
-  margin: 115px 0 130px 0;
-  padding: 30px 0 30px 0;
+  margin: 55px 0 70px 0;
+  padding: 90px 0 90px 0;
   background-color: #030303;
 }
 
@@ -1529,7 +1529,7 @@ a:hover, a:focus {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  color: #2b3581;
+  color: #000;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -2320,3 +2320,4 @@ html[dir="ltr"] .footer .subscribe button {
     content: "";
   }
 }
+
