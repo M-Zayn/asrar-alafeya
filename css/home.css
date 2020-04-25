@@ -1063,9 +1063,8 @@ a:hover, a:focus {
 }
 
 .card .add-to-card {
-  background-image: -webkit-gradient(linear, left top, right top, from(#bdbdbd), color-stop(#bdbdbd), color-stop(#5a8909), to(#8dad09));
-  background-image: linear-gradient(90deg, #bdbdbd, #bdbdbd, #5a8909, #8dad09);
-  background-size: 300%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5a8909), to(#8dad09));
+  background-image: linear-gradient(0deg, #5a8909, #8dad09);
   width: 156px;
   height: 32px;
   outline: none;
@@ -1077,6 +1076,44 @@ a:hover, a:focus {
   font-size: 14px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.card .add-to-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5a8909), to(#8dad09));
+  background-image: linear-gradient(90deg, #5a8909, #8dad09);
+  border-radius: 50px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .card .add-to-card span {
@@ -1084,8 +1121,9 @@ a:hover, a:focus {
   margin: 0 0 0 5px;
 }
 
-.card .add-to-card:hover {
-  background-position-x: 100%;
+.card .add-to-card:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .card .add-to-fav {
@@ -1094,9 +1132,9 @@ a:hover, a:focus {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bdbdbd), color-stop(#bdbdbd), color-stop(#5a8909), to(#8dad09));
-  background-image: linear-gradient(90deg, #bdbdbd, #bdbdbd, #5a8909, #8dad09);
-  background-size: 300%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5a8909), color-stop(#8dad09), color-stop(#bdbdbd), to(#bdbdbd));
+  background-image: linear-gradient(0deg, #5a8909, #8dad09, #bdbdbd, #bdbdbd);
+  background-size: 100% 300%;
   font-size: 16px;
   color: white;
   display: -webkit-box;
@@ -1114,7 +1152,7 @@ a:hover, a:focus {
 }
 
 .card .add-to-fav:hover {
-  background-position-x: 100%;
+  background-position-y: 100%;
 }
 
 .card:hover {
@@ -2282,5 +2320,3 @@ html[dir="ltr"] .footer .subscribe button {
     content: "";
   }
 }
-
-/*# sourceMappingURL=home.css.map */
