@@ -399,12 +399,24 @@ a:hover, a:focus {
   background-color: transparent;
   font-size: 18px;
   color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-bar .icons .search-icon span {
   font-family: ar-reg;
   font-size: 16px;
   color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.nav-bar .icons .search-icon:hover button {
+  color: #8dad09;
+}
+
+.nav-bar .icons .search-icon:hover span {
+  color: #8dad09;
 }
 
 .nav-bar .icons .user-icon {
@@ -431,11 +443,15 @@ a:hover, a:focus {
   border: none;
   background-color: transparent;
   padding: 0 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-bar .icons .user-icon span {
   font-family: ar-reg;
   font-size: 16px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-bar .icons .user-icon a {
@@ -444,8 +460,12 @@ a:hover, a:focus {
   color: inherit;
 }
 
-.nav-bar .icons .user-icon:hover {
-  color: white;
+.nav-bar .icons .user-icon:hover button {
+  color: #8dad09;
+}
+
+.nav-bar .icons .user-icon:hover span {
+  color: #8dad09;
 }
 
 .nav-bar .icons .card-icon {
@@ -469,11 +489,13 @@ a:hover, a:focus {
   outline: none;
   border: none;
   background-color: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-bar .icons .card-icon span {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   font-family: ar-reg;
   font-size: 18px;
 }
@@ -505,6 +527,14 @@ a:hover, a:focus {
 .nav-bar .icons .card-icon:hover .card-num-icon {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
+}
+
+.nav-bar .icons .card-icon:hover button {
+  color: #8dad09;
+}
+
+.nav-bar .icons .card-icon:hover span {
+  color: #8dad09;
 }
 
 .lang-switcher {
@@ -643,6 +673,8 @@ a:hover, a:focus {
   font-size: 17px;
   color: #fff;
   padding: 0 18px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-list .list li.menu-hover {
@@ -662,6 +694,14 @@ a:hover, a:focus {
           transform: translateY(-50%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+}
+
+.nav-list .list li:hover {
+  color: #8dad09;
+}
+
+.nav-list .list li:hover::after {
+  color: #8dad09;
 }
 
 .hoverd-menu {
@@ -748,6 +788,8 @@ a:hover, a:focus {
   margin: 18px 0 0 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  max-width: 115px;
+  text-align: center;
 }
 
 /*------ navlist end ------*/
@@ -826,7 +868,7 @@ a:hover, a:focus {
 /*------ header end ------*/
 /*------ category start ------*/
 .category {
-  margin: 60px 0 130px 0;
+  margin: 60px 0 100px 0;
 }
 
 .category .zx-container {
@@ -902,6 +944,7 @@ a:hover, a:focus {
 
 .category .cat:hover a {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+  color: #8dad09;
 }
 
 .category .owl-carousel {
@@ -1020,8 +1063,9 @@ a:hover, a:focus {
 }
 
 .card .add-to-card {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#5a8909), to(#8dad09));
-  background-image: linear-gradient(0deg, #5a8909 0%, #8dad09 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#bdbdbd), color-stop(#bdbdbd), color-stop(#5a8909), to(#8dad09));
+  background-image: linear-gradient(90deg, #bdbdbd, #bdbdbd, #5a8909, #8dad09);
+  background-size: 300%;
   width: 156px;
   height: 32px;
   outline: none;
@@ -1041,8 +1085,7 @@ a:hover, a:focus {
 }
 
 .card .add-to-card:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#5a8909), to(#8dad09));
-  background-image: linear-gradient(90deg, #5a8909 0%, #8dad09 100%);
+  background-position-x: 100%;
 }
 
 .card .add-to-fav {
@@ -1051,7 +1094,9 @@ a:hover, a:focus {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #bdbdbd;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bdbdbd), color-stop(#bdbdbd), color-stop(#5a8909), to(#8dad09));
+  background-image: linear-gradient(90deg, #bdbdbd, #bdbdbd, #5a8909, #8dad09);
+  background-size: 300%;
   font-size: 16px;
   color: white;
   display: -webkit-box;
@@ -1069,8 +1114,7 @@ a:hover, a:focus {
 }
 
 .card .add-to-fav:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#5a8909), to(#8dad09));
-  background-image: linear-gradient(0deg, #5a8909 0%, #8dad09 100%);
+  background-position-x: 100%;
 }
 
 .card:hover {
@@ -1085,6 +1129,11 @@ a:hover, a:focus {
 
 /*--- card end ---*/
 /*------ sp offers start ------*/
+.sp-offers {
+  padding: 30px 0 30px 0;
+  background-color: #030303;
+}
+
 .sp-offers .sp-offers-header {
   margin: 0 0 30px 0;
   padding: 0;
@@ -1132,7 +1181,7 @@ a:hover, a:focus {
 /*------ sp offers end ------*/
 /*------ most sales start ------*/
 .most-sales {
-  margin: 160px 0 0 0;
+  margin: 130px 0 0 0;
 }
 
 .most-sales .most-sales-header {
@@ -1260,7 +1309,9 @@ a:hover, a:focus {
 /*------ sp offers end ------*/
 /*------ servs start ------*/
 .servs {
-  margin: 145px 0 160px 0;
+  margin: 115px 0 130px 0;
+  padding: 30px 0 30px 0;
+  background-color: #030303;
 }
 
 .servs .zx-container {
@@ -2061,6 +2112,15 @@ a:hover, a:focus {
   .nav-bar .search {
     width: 94%;
   }
+  .nav-bar .search input {
+    border: none;
+  }
+  .nav-bar .search input:hover, .nav-bar .search input:focus {
+    border: none;
+  }
+  .nav-bar .search.show {
+    top: 75px;
+  }
   .header {
     margin: 5px 0 40px 0;
   }
@@ -2142,12 +2202,16 @@ html[dir="ltr"] .nav-bar .icons .card-icon .card-num-icon {
 }
 
 html[dir="ltr"] .nav-list {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 70px;
 }
 
 html[dir="ltr"] .nav-list .list li.menu-hover::after {
   left: unset;
   right: 3px;
+}
+
+html[dir="ltr"] .nav-bar .icons {
+  margin: 50px 0 0 auto;
 }
 
 html[dir="ltr"] .category .cat .cat-header.sp-header {
@@ -2156,6 +2220,10 @@ html[dir="ltr"] .category .cat .cat-header.sp-header {
 
 html[dir="ltr"] .card .add-to-card span {
   margin: 0 5px 0 0;
+}
+
+html[dir="ltr"] .card .add-to-fav {
+  margin: 0 0 0 5px;
 }
 
 html[dir="ltr"] .footer .subscribe button {
@@ -2215,3 +2283,4 @@ html[dir="ltr"] .footer .subscribe button {
   }
 }
 
+/*# sourceMappingURL=home.css.map */
